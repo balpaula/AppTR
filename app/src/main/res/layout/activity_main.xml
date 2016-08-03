@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paula.apptr.MainActivity"
+    android:foregroundTint="#333333">
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/botóComençar"
+        android:background="@drawable/iconainici4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/botóElsColors"
+        android:background="@drawable/note"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@+id/textElsColors"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="botoElsColorsOnClick" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/botóComFunciona"
+        android:background="@drawable/question"
+        android:layout_alignTop="@+id/botóElsColors"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/botóSobreApp"
+        android:background="@drawable/paperclip"
+        android:layout_alignTop="@+id/botóComFunciona"
+        android:layout_alignRight="@+id/textSobreApp"
+        android:layout_alignEnd="@+id/textSobreApp"
+        android:onClick="botoSobreAppOnClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Els Colors"
+        android:id="@+id/textElsColors"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Com Funciona"
+        android:id="@+id/textComFunciona"
+        android:paddingTop="10dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignTop="@+id/textElsColors"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sobre l&apos;App"
+        android:id="@+id/textSobreApp"
+        android:layout_alignTop="@+id/textComFunciona"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/botóComençar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#212121" />
+
+</RelativeLayout>
+
