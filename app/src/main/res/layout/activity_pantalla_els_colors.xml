@@ -31,66 +31,69 @@
         android:layout_alignParentLeft="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="230dp"
-        android:id="@+id/imatgeCercleCromàtic"
-        android:background="@drawable/wheel02"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
         android:layout_below="@+id/textColorsIdentificar"
-        android:layout_alignParentLeft="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="ex. Classificació dels colors"
-        android:id="@+id/textClassificacióColors"
-        android:layout_alignParentStart="true"
-        android:gravity="center"
-        android:layout_below="@+id/imatgeCercleCromàtic"
-        android:layout_alignParentLeft="true" />
-
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Primaris:"
-        android:id="@+id/textColorsPrimaris"
-        android:layout_alignWithParentIfMissing="false"
-        android:gravity="left|center"
-        android:layout_below="@+id/textClassificacióColors"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentRight="true" />
-
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Secundaris"
-        android:id="@+id/textColorsSecundaris"
-        android:gravity="left|center"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_below="@+id/textColorsPrimaris"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentRight="true" />
-
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Terciaris"
-        android:id="@+id/textColorsTerciaris"
-        android:gravity="left|center"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_below="@+id/textColorsSecundaris"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentRight="true" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/colorwheel" />
 
     <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/botóImatgeEnrere"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/enrere"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/botoColorsPrimaris"
+        android:onClick="botoColorsPrimarisOnClick"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/tagcolors1" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/botoColorsSecundaris"
+        android:onClick="botoColorsSecundarisOnClick"
+        android:layout_alignTop="@+id/botoColorsPrimaris"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tagcolors2" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/botoColorsTerciaris"
+        android:onClick="botoColorsTerciarisOnClick"
+        android:layout_alignTop="@+id/botoColorsSecundaris"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/tagcolors3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Primaris"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Secundaris"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Terciaris"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
