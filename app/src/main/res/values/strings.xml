@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">AppTR</string>
     <string name="title_activity_pantalla_sobre_app">PantallaSobreApp</string>
+    <string name="title_activity_pantalla_com_funciona">pantallaComFunciona</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_pantalla_com_funciona_tabs">pantallaComFuncionaTabs</string>
+    <string name="title_activity_pantalla_com_funciona3">pantallaComFunciona3</string>
 </resources>

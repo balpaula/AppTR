@@ -53,27 +53,35 @@
             android:gravity="center_vertical|center_horizontal">
 
             <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:id="@+id/imageView2" />
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/iconarobasize2"
+                android:padding="2dp" />
 
             <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
                 android:id="@+id/imageView3"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/iconapintarsize2"
+                android:padding="2dp" />
 
             <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
                 android:id="@+id/imageView4"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/iconallumsize2"
+                android:padding="2dp" />
 
             <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
                 android:id="@+id/imageView5"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:padding="2dp"
+                android:src="@drawable/iconapillsize2" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

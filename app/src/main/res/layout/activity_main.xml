@@ -13,16 +13,18 @@
     <ImageButton
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:id="@+id/botóComençar"
-        android:background="@drawable/iconainici4"
+        android:id="@+id/botoComençar"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginTop="42dp"
+        android:background="@drawable/iconainici5"
+        android:clickable="false"
+        android:onClick="botoFerFoto" />
 
     <ImageButton
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:id="@+id/botóElsColors"
+        android:id="@+id/botoElsColors"
         android:background="@drawable/note"
         android:layout_alignWithParentIfMissing="true"
         android:layout_above="@+id/textElsColors"
@@ -33,17 +35,19 @@
     <ImageButton
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:id="@+id/botóComFunciona"
+        android:id="@+id/botoComFunciona"
         android:background="@drawable/question"
-        android:layout_alignTop="@+id/botóElsColors"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignTop="@+id/botoElsColors"
+        android:layout_centerHorizontal="true"
+        android:onClick="botoComFuncionaOnClick"
+        android:nestedScrollingEnabled="false" />
 
     <ImageButton
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:id="@+id/botóSobreApp"
+        android:id="@+id/botoSobreApp"
         android:background="@drawable/paperclip"
-        android:layout_alignTop="@+id/botóComFunciona"
+        android:layout_alignTop="@+id/botoComFunciona"
         android:layout_alignRight="@+id/textSobreApp"
         android:layout_alignEnd="@+id/textSobreApp"
         android:onClick="botoSobreAppOnClick" />
@@ -80,16 +84,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:paddingTop="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView3"
-        android:layout_alignBottom="@+id/botóComençar"
-        android:layout_centerHorizontal="true"
-        android:textColor="#212121" />
 
 </RelativeLayout>
 

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.paula.apptr">
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" /> // permisos camera
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +21,12 @@
         <activity android:name=".pantallaInfo" />
         <activity android:name=".pantallaElsColors" />
         <activity android:name=".PantallaSobreApp" />
-        <activity android:name=".pantallaFinalFoto"></activity>
+        <activity android:name=".pantallaFinalFoto" />
+        <activity android:name=".pantallaComFunciona2" />
+        <activity
+            android:name=".pantallaComFunciona3"
+            android:label="@string/title_activity_pantalla_com_funciona3" />
+        <activity android:name=".deteccioColors"></activity>
     </application>
 
 </manifest>

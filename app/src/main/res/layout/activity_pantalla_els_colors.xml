@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="ELS COLORS INVISIBLES"
+        android:text="ELS COLORS"
         android:id="@+id/textTítolElsColors"
         android:gravity="center"
         android:layout_alignParentTop="true"
