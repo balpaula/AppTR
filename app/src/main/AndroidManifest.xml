@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.paula.apptr">
 
-    <uses-feature android:name="android.hardware.camera"
-        android:required="true" /> // permisos camera
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,22 +14,42 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTR2">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".pantallaInfo" />
-        <activity android:name=".pantallaElsColors" />
-        <activity android:name=".PantallaSobreApp" />
-        <activity android:name=".pantallaFinalFoto" />
-        <activity android:name=".pantallaComFunciona2" />
+        <activity
+            android:name=".pantallaInfo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pantallaElsColors"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PantallaSobreApp"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pantallaFinalFoto"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".pantallaComFunciona3"
-            android:label="@string/title_activity_pantalla_com_funciona3" />
-        <activity android:name=".deteccioColors"></activity>
+            android:label="@string/title_activity_pantalla_com_funciona3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".deteccioColors"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pantallaDeteccioColors2"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths2" />
+        </provider>
+
     </application>
 
 </manifest>

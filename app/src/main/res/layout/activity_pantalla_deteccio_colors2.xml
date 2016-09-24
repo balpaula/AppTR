@@ -7,16 +7,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.paula.apptr.pantallaComFunciona2">
+    tools:context="com.example.paula.apptr.pantallaDeteccioColors2">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
     <ImageView
-        android:layout_width="365dp"
-        android:layout_height="1043dp"
-        android:id="@+id/imageView6"
-        android:background="@drawable/comfuncionaexemple1" />
-    </ScrollView>
-
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageFoto"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

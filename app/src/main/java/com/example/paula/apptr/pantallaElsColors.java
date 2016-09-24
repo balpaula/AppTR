@@ -13,19 +13,25 @@ public class pantallaElsColors extends AppCompatActivity {
         setContentView(R.layout.activity_pantalla_els_colors);
     }
 
+    public void paletaOnClick(View v) {
+        ImageView img = (ImageView) findViewById(R.id.imageView);
+        img.setImageResource(R.drawable.paletanoms2);
+
+    }
+
     public void botoColorsPrimarisOnClick(View v) {
         ImageView img = (ImageView)findViewById(R.id.imageView);
-        img.setImageResource(R.drawable.colorsprimaris);
+        img.setImageResource(R.drawable.colorsprimarisdeteccio2);
     }
 
     public void botoColorsSecundarisOnClick(View v) {
         ImageView img = (ImageView)findViewById(R.id.imageView);
-        img.setImageResource(R.drawable.colorssecundaris);
+        img.setImageResource(R.drawable.colorssecundarisdeteccio2);
     }
 
     public void botoColorsTerciarisOnClick(View v) {
         ImageView img = (ImageView)findViewById(R.id.imageView);
-        img.setImageResource(R.drawable.colorsterciaris);
+        img.setImageResource(R.drawable.altresnoms);
     }
 
 }

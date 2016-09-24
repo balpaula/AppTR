@@ -33,7 +33,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Objectiu de l&apos;aplicació"
             android:id="@+id/textObjectiuApp"
-            android:gravity="center_vertical" />
+            android:gravity="center_vertical"
+            android:textColor="#212121" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,7 +42,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Utilitat en els diferents àmbits"
             android:id="@+id/textUtilitatApp"
-            android:gravity="center_vertical" />
+            android:gravity="center_vertical"
+            android:textColor="#212121" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -53,35 +55,50 @@
             android:gravity="center_vertical|center_horizontal">
 
             <ImageView
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:id="@+id/imageView2"
                 android:src="@drawable/iconarobasize2"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:onClick="robaOnClick" />
 
             <ImageView
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:id="@+id/imageView3"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/iconapintarsize2"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:onClick="colorsOnClick" />
 
             <ImageView
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:id="@+id/imageView4"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/iconallumsize2"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:onClick="ledOnClick" />
 
             <ImageView
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:id="@+id/imageView5"
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
-                android:src="@drawable/iconapillsize2" />
+                android:src="@drawable/iconapillsize2"
+                android:onClick="pastillaOnClick" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textFacts"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:textColor="#212121" />
+
     </LinearLayout>
 </RelativeLayout>
