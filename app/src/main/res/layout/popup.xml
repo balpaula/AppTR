@@ -25,14 +25,17 @@
         android:text="Color complementari:"
         android:id="@+id/textColorComplementari"
         android:textSize="26dp"
-        android:textColor="#212121" />
+        android:textColor="#212121"
+        android:visibility="gone" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="179dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textResposta"
         android:layout_gravity="center_horizontal"
         android:textColor="#212121"
-        android:textSize="22dp" />
+        android:textSize="26dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center_vertical|center|center_horizontal" />
 </LinearLayout>

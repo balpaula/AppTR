@@ -99,34 +99,63 @@ public class deteccioColors extends Activity {
                         popupWindow = new PopupWindow(container, 450, 300, true);
                         popupWindow.showAtLocation(relativeLayout, Gravity.CENTER, 0, 0);
 
+                        ImageView imatgeGammaCanvi = (ImageView)popupWindow.getContentView().
+                                findViewById(R.id.imageGamma);
+
+                        TextView textEnunciatColorComplementari = (TextView)popupWindow.getContentView().
+                                findViewById(R.id.textColorComplementari);
+
                         TextView textRespostaCanvi = (TextView)popupWindow.getContentView().
                                 findViewById(R.id.textResposta);
+
                         if (codiColorPopup == 0){
-                            textRespostaCanvi.setText(" ");
+                            textRespostaCanvi.setVisibility(View.GONE);
+                            textEnunciatColorComplementari.setVisibility(View.GONE);
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammacalida);
+                        }else if (codiColorPopup == 10){
+                            textRespostaCanvi.setVisibility(View.GONE);
+                            textEnunciatColorComplementari.setVisibility(View.GONE);
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammafreda);
+                        }else {
+                            textRespostaCanvi.setVisibility(View.VISIBLE);
+                            textEnunciatColorComplementari.setVisibility(View.VISIBLE);
                         }
                         if (codiColorPopup == 1){
                             textRespostaCanvi.setText("Lila");
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammacalida);
                         }
                         if (codiColorPopup == 2){
                             textRespostaCanvi.setText("Verd");
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammacalida);
                         }
                         if (codiColorPopup == 3){
                             textRespostaCanvi.setText("Taronja");
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammafreda);
                         }
                         if (codiColorPopup == 4){
                             textRespostaCanvi.setText("Blau");
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammacalida);
                         }
                         if (codiColorPopup == 5){
                             textRespostaCanvi.setText("Groc");
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammafreda);
                         }
                         if (codiColorPopup == 6){
                             textRespostaCanvi.setText("Vermell");
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammafreda);
                         }
                         if (codiColorPopup == 7){
                             textRespostaCanvi.setText("Blanc");
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammaneutra);
                         }
                         if (codiColorPopup == 8){
                             textRespostaCanvi.setText("Negre");
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammaneutra);
+                        }
+                        if (codiColorPopup == 9){
+                            textRespostaCanvi.setVisibility(View.GONE);
+                            textEnunciatColorComplementari.setVisibility(View.GONE);
+                            imatgeGammaCanvi.setImageResource(R.drawable.gammaneutra);
                         }
 
 
@@ -154,12 +183,12 @@ public class deteccioColors extends Activity {
                 }
                 if (sat <= 0.20 && 0.300 < value && value < 0.800) {
                     textToChange.setText("GRIS");
-                    codiColorPopup = 0;
+                    codiColorPopup = 9;
                 }
                 if (5 < hue && hue <= 45 && 0.20 < sat) {
                     if (0.650 < value) {
                         textToChange.setText("TARONJA");
-                        codiColorPopup = 3;
+                        codiColorPopup = 4;
                     }
                     if (0.300 < value && value <= 0.650) {
                         textToChange.setText("MARRÓ");
@@ -173,7 +202,7 @@ public class deteccioColors extends Activity {
                     }
                     if (0.300 < value && value <= 0.650) {
                         textToChange.setText("VERD OLIVA");//groc oliva? verd oliva? REVISAR
-                        codiColorPopup = 0;
+                        codiColorPopup = 10;
                     }
                 }
                 if (90 < hue && hue <= 165 && 0.20 < sat) {
@@ -183,13 +212,13 @@ public class deteccioColors extends Activity {
                     }
                     if (0.300 < value && value <= 0.500) {
                         textToChange.setText("VERD FOSC");
-                        codiColorPopup = 0;
+                        codiColorPopup = 10;
                     }
                 }
                 if (165 < hue && hue <= 200 && 0.20 < sat) {
                     if (0.300 < value) {
                         textToChange.setText("TURQUESA");
-                        codiColorPopup = 0;
+                        codiColorPopup = 10;
                     }
                         //blau turquesa?cian? revisar
 
@@ -201,7 +230,7 @@ public class deteccioColors extends Activity {
                 if (200 < hue && hue <= 220 && 0.20 > sat) {
                     if (0.750 < value) {
                         textToChange.setText("BLAU CLAR");
-                        codiColorPopup = 0;
+                        codiColorPopup = 10;
                     }
                     if (0.500 < value && value <= 0.750) {
                         textToChange.setText("BLAU");
@@ -209,7 +238,7 @@ public class deteccioColors extends Activity {
                     }
                     if (0.300 < value && value <= 0.500) {
                         textToChange.setText("BLAU FOSC");
-                        codiColorPopup = 0;
+                        codiColorPopup = 10;
                     }
                 }
                 if (220 < hue && hue <= 260 && 0.20 < sat) {
@@ -219,7 +248,7 @@ public class deteccioColors extends Activity {
                     }
                     if (0.300 < value && value <= 0.650) {
                         textToChange.setText("BLAU FOSC");//blau marí? revisar
-                        codiColorPopup = 0;
+                        codiColorPopup = 10;
                     }
                 }
                 if (260 < hue && hue <= 285 && 0.20 < sat) {
@@ -234,7 +263,7 @@ public class deteccioColors extends Activity {
                 if (285 < hue && hue <= 310 && 0.20 < sat) {
                     if (0.650 < value) {
                         textToChange.setText("VIOLETA");
-                        codiColorPopup = 0;
+                        codiColorPopup = 10;
                     }
                     if (0.300 < value && value <= 0.650) {
                         textToChange.setText("LILA");//revisar
