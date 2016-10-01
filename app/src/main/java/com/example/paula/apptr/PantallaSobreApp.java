@@ -1,16 +1,26 @@
 package com.example.paula.apptr;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class PantallaSobreApp extends AppCompatActivity {
+
+    WebView webview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_sobre_app);
+        TextView textObjectiu = (TextView) findViewById(R.id.textObjectiuApp);
+        textObjectiu.setText("COLORITECA és una aplicació dissenyada i desenvolupada per reconèixer els colors. Neix com a Treball de Recerca i amb l'objectiu de convertir-se en una eina d'ajuda que faciliti la identificació dels colors a aquelles persones que pateixen daltonisme o discromatòpsia.");
     }
 
     public void robaOnClick (View v){

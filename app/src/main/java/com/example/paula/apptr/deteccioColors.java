@@ -96,7 +96,7 @@ public class deteccioColors extends Activity {
                         layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
                         ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup, null);
 
-                        popupWindow = new PopupWindow(container, 450, 300, true);
+                        popupWindow = new PopupWindow(container, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
                         popupWindow.showAtLocation(relativeLayout, Gravity.CENTER, 0, 0);
 
                         ImageView imatgeGammaCanvi = (ImageView)popupWindow.getContentView().
@@ -215,7 +215,7 @@ public class deteccioColors extends Activity {
                         codiColorPopup = 10;
                     }
                 }
-                if (165 < hue && hue <= 200 && 0.20 < sat) {
+                if (165 < hue && hue <= 180 && 0.20 < sat) {
                     if (0.300 < value) {
                         textToChange.setText("TURQUESA");
                         codiColorPopup = 10;
@@ -227,7 +227,7 @@ public class deteccioColors extends Activity {
                     }
                     */
                 }
-                if (200 < hue && hue <= 220 && 0.20 > sat) {
+                if (180 < hue && hue <= 220 && 0.20 < sat) {
                     if (0.750 < value) {
                         textToChange.setText("BLAU CLAR");
                         codiColorPopup = 10;

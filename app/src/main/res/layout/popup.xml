@@ -10,13 +10,19 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Gamma:"
         android:id="@+id/textGamma"
+        android:fontFamily="sans-serif-light"
         android:textSize="26dp"
-        android:textColor="#212121" />
+        android:textColor="#212121"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp" />
+
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageGamma" />
+        android:id="@+id/imageGamma"
+        android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,9 +30,12 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Color complementari:"
         android:id="@+id/textColorComplementari"
+        android:fontFamily="sans-serif-light"
         android:textSize="26dp"
         android:textColor="#212121"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
 
     <TextView
         android:layout_width="179dp"
@@ -35,7 +44,10 @@
         android:id="@+id/textResposta"
         android:layout_gravity="center_horizontal"
         android:textColor="#212121"
-        android:textSize="26dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="34dp"
         android:foregroundGravity="center_vertical|center|center_horizontal"
-        android:gravity="center_vertical|center|center_horizontal" />
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textStyle="italic"
+        android:layout_marginBottom="10dp" />
 </LinearLayout>

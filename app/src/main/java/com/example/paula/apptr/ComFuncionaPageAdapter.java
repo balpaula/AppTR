@@ -52,7 +52,7 @@ public class ComFuncionaPageAdapter extends FragmentPagerAdapter {
                 break;
 
             case 2:
-                id = R.drawable.comfunciona3;
+                id = R.drawable.comfunciona3plus;
                 break;
 
         }

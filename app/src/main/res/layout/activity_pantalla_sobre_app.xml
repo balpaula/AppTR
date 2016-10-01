@@ -13,37 +13,43 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:id="@+id/linearLayout2"
+        android:gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="SOBRE L&apos;APP"
-            android:id="@+id/textTítolSobreApp"
-            android:gravity="center_vertical"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Objectiu de l&apos;aplicació"
+            android:text=""
             android:id="@+id/textObjectiuApp"
-            android:gravity="center_vertical"
-            android:textColor="#212121" />
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|center_horizontal"
+            android:textColor="#212121"
+            android:visibility="visible"
+            android:textAlignment="center"
+            android:background="#642196f3"
+            android:layout_margin="10dp"
+            android:padding="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Utilitat en els diferents àmbits"
+            android:text="El reconeixement d'un total de 18 colors proporciona la seva utilitat en els diferents àmbits del dia a dia."
             android:id="@+id/textUtilitatApp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#212121"
+            android:visibility="visible"
+            android:layout_weight="0.18"
+            android:textAlignment="inherit"
             android:gravity="center_vertical"
-            android:textColor="#212121" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:textSize="16dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -92,13 +98,16 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/textFacts"
+            android:fontFamily="sans-serif-light"
             android:layout_gravity="center_horizontal"
             android:foregroundGravity="center_vertical|center_horizontal"
             android:gravity="center_vertical|center|center_horizontal"
-            android:textColor="#212121" />
+            android:textColor="#212121"
+            android:textStyle="italic" />
 
     </LinearLayout>
+
 </RelativeLayout>

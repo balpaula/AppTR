@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageView"
-        android:src="@drawable/paleta2"
+        android:src="@drawable/paleta2resized"
         android:longClickable="false"
         android:onClick="paletaOnClick"
         android:layout_above="@+id/botoColorsPrimaris"
@@ -55,6 +55,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Primaris"
         android:id="@+id/textView3"
+        android:fontFamily="sans-serif-light"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -65,6 +66,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Secundaris"
         android:id="@+id/textView4"
+        android:fontFamily="sans-serif-light"
         android:layout_alignBottom="@+id/textView3"
         android:layout_centerHorizontal="true" />
 
@@ -72,8 +74,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Terciaris"
+        android:text="Altres"
         android:id="@+id/textView5"
+        android:fontFamily="sans-serif-light"
         android:layout_alignBottom="@+id/textView4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
